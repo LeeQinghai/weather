@@ -1,0 +1,21 @@
+<html ng-app>
+	<head>
+		
+	</head>
+	<body>
+		<div ng-controller="ToggleController">
+			<p ng-show= "toggle.state">shit!</p>
+			<button ng-click="toggleCtrl()">toggle</button>
+		</div>
+	</body>
+		<script src="angular.min.js"></script>
+		<script>
+			function ToggleController($scope) {
+				$scope.toggle = {state : false};
+
+				$scope.toggleCtrl = function(){
+					$scope.toggle.state = !$scope.toggle.state;
+				}	
+			}
+		</script>
+</html>

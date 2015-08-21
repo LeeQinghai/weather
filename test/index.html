@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript">
+			(function xx() {
+				var a = {k : "i am k"};
+				console.log("start 001")
+				var c = function() {
+					console.log("start 004");
+				} ();
+				function yy() {
+					console.log("start 002");
+				}! function() {
+					console.log("start 003")
+				}() , a.t = {t : "i am t"},
+
+				function(a) {
+					console.log(a.t);
+				}(a)
+			}())
+		</script>
+	</head>
+	<body>
+		<p> this is test!</p>
+	</body>
+</html>
